@@ -1,8 +1,5 @@
 import hashlib
 
-# print(hashlib.md5(str("pqrstuv1048970").encode('utf-8')).hexdigest())
-
-
 input = "yzbqklnj"
 number_max = 10000000                   # Pour éviter une boucle infinie
 found = False                           # Pour savoir à la fin du programme si le résultat est trouvé
