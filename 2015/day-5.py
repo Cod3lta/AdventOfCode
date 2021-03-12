@@ -33,8 +33,15 @@ def string_is_nice_v1(string):
     
     return True
 
+def string_is_nice_v2(string):
+    # Contains a pair of any two letter that appears at least twice
+    
+
+    # Contains at least ont letter surrounded by the same letter
+    return True
+
 for string in input.split(","):
-    if string_is_nice_v1(string):
+    if string_is_nice_v2(string):
         nb_nice_strings += 1
 
 print("Amount of nice strings: " + str(nb_nice_strings))
