@@ -5,7 +5,7 @@
     "version": "0.2.0",
     "configurations": [
     {
-        "name": "Launch currently open script with Xdebug 2 (Legacy)",
+        "name": "PHP Launch currently open script",
         "type": "php",
         "request": "launch",
         "program": "${file}",

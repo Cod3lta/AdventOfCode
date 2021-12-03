@@ -8,11 +8,11 @@ fclose($file);
 $gammaRate = "";
 $epsilonRate = "";
 
-// For each bit of a line
+// For each bit
 for ($i = 0; $i < strlen($data[0]); $i++) {
     $sum = 0;
 
-    // Sum the numbers
+    // Sum the nth bit of each line
     foreach ($data as $line) {
         $sum += intval($line[$i]);
     }
