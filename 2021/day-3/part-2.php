@@ -9,11 +9,11 @@ fclose($file);
 $criterias = [
     "oxy" => [
         "data" => $data,
-        "prefferedNumber" => 1,
+        "prefferedBit" => 1,
     ],
     "co2" => [
         "data" => $data,
-        "prefferedNumber" => 0,
+        "prefferedBit" => 0,
     ]
 ];
 
@@ -22,8 +22,8 @@ function filterCrt($line) {
     // If we have the same amount of 0s and 1s
     if ($sum == sizeof($crt['data']) / 2)
         // We return true if the current bit == the bit of the criteria
-        return $line[$i] == $crt['prefferedNumber'];
-    return ($line[$i] == $crt['prefferedNumber']) == $mostCommonBit;
+        return $line[$i] == $crt['prefferedBit'];
+    return ($line[$i] == $crt['prefferedBit']) == $mostCommonBit;
 };
 
 function reduceCrt($sum, $line) {
